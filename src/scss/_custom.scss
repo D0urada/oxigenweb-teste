@@ -1,44 +1,41 @@
-header {
-	background: $color-primary;
-	height: 15vh;
+@font-face {
+	font-family: "gunterz";
+	src: url("../src/assets/fonts/gunterz-demo/Fontspring-DEMO-gunterz-regular.otf");
+	font-family: "sebino";
+	src: url("../src/assets/fonts/sebino/Sebino-Regular.ttf");
 }
 
-.section-one {
-	background: $section-one-background;
-	height: 85vh;
+.gunterz-font {
+	font-family: 'gunterz', sans-serif !important;
 }
 
-.section-two {
-	background-color: $color-secondary;
-	height: 80vh;
+.sebino-font {
+	font-family: 'sebino', sans-serif !important;
 }
 
-.section-thre {
-	background-color: $color-tertiary;
-	height: 95vh;
+a, a:hover, a:focus, a:active {
+	text-decoration: none !important;
+	color: inherit !important;
+}
+ul {
+	list-style-type: none !important;
 }
 
-.section-four {
-	background: $color-secondary;
-	height: 80vh;
-}
+@import './header';
+@import './section_one';
+@import './section_two';
+@import './section_thre';
+@import './section_four';
+@import './section_five';
+@import './section_six';
+@import './section_seven';
+@import './footer';
 
-.section-five {
-	background: $color-tertiary;
-	height: 90vh;
-}
 
-.section-six {
-	background: $color-quaternary;
-	height: 90vh;
-}
 
-.section-seven {
-	background: $color-primary;
-	height: 80vh;
-}
 
-footer {
-	background: $color-quaternary;
-	height: 77px;
-}
+
+
+
+
+

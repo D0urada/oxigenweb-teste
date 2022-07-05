@@ -20,7 +20,7 @@ runs the server:
 
 if you want to generate the dist files, run:
 
-	npm run prod 
+	npm run build 
 
 or
 

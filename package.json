@@ -5,8 +5,9 @@
 	"private": true,
 	"main": "index.js",
 	"scripts": {
-		"build": "webpack --config webpack.prod.js",
+		"build": "webpack --config webpack.prod.js & npm run nojekyll",
 		"dev": "webpack --config webpack.dev.js",
+		"nojekyll": "echo $null >> docs/.nojekyll",
 		"start": "webpack-dev-server --config webpack.dev.js --open"
 	},
 	"repository": {

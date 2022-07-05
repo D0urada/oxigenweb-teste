@@ -1,23 +1,23 @@
-const path = require("path");
-const config = require("./webpack.config");
-const { merge } = require("webpack-merge");
+const path = require('path');
+const config = require('./webpack.config');
+const { merge } = require('webpack-merge');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin'); //this plugin is used in production so that the css is loaded apart from the javascript
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserWebpackPlugin = require('terser-webpack-plugin');
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = merge(config, {
-	mode: "production",
+	mode: 'production',
 	output: {
-		filename: "[name].[hash].bundle.js",
-		path: path.resolve(__dirname, "docs")
+		filename: '[name].[hash].bundle.js',
+		path: path.resolve(__dirname, 'docs')
 	},
 	optimization: {
 		minimizer: [
 			new OptimizeCssAssetsPlugin(),
 			new TerserWebpackPlugin(),
 			new HtmlWebpackPlugin({
-				template: "./src/template.html",
+				template: './src/template.html',
 				minify: {
 					removeAttributeQuotes: true,
 					collapseWhitespace: true,
@@ -28,7 +28,7 @@ module.exports = merge(config, {
 	},
 	plugins: [
 		new MiniCssExtractPlugin({
-			filename: "[name].[hash].css"
+			filename: '[name].[hash].css'
 		}),
 	],
 	module: {
@@ -37,8 +37,8 @@ module.exports = merge(config, {
 				test: /\.scss$/,
 				use: [
 					MiniCssExtractPlugin.loader, 	// tird: extract css into files
-					"css-loader", 		// second: turns css into common js
-					"sass-loader" 		// first: turns sass into css
+					'css-loader', 		// second: turns css into common js
+					'sass-loader' 		// first: turns sass into css
 				]
 			}
 		]

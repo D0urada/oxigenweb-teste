@@ -2,8 +2,8 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
 	entry: {
-		main: "./src/main.js",
-		vendor: "./src/vendor.js",
+		main: './src/main.js',
+		vendor: './src/vendor.js',
 	},
 	plugins: [
 		new CleanWebpackPlugin()
@@ -13,16 +13,16 @@ module.exports = {
 			{
 				test: /\.html$/,
 				use: [
-					"html-loader"
+					'html-loader'
 				]
 			},
 			{
 				test: /\.(png|jpe?g|gif)$/i,
 				use: {
-					loader: "file-loader",
+					loader: 'file-loader',
 					options: {
 						name: '[name].[hash].[ext]',
-						outputPath: "imgs"
+						outputPath: 'imgs'
 					}
 				}
 			}

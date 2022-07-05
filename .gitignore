@@ -1,4 +1,2 @@
-.github/*
-docs/*
-docs/index.html
-node_modules/*
+.github
+node_modules

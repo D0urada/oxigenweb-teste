@@ -1,4 +1,13 @@
 footer {
 	background: $color-quaternary;
-	height: 77px;
+
+	div {
+		p {
+			color: $color-primary;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 35px;
+		}
+	}
 }

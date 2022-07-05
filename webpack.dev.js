@@ -21,16 +21,16 @@ module.exports = merge(config, {
 			template: './src/template.html'
 		})
 	],
-	module: {
-		rules: [
-			{
-				test: /\.scss$/,
-				use: [
-					'style-loader', 	// tird: inject styles into DOM
-					'css-loader', 		// second: turns css into common js
-					'sass-loader' 		// first: turns sass into css
-				]
-			}
-		]
-	}
+	// module: {
+	// 	rules: [
+	// 		{
+	// 			test: /\.scss$/,
+	// 			use: [
+	// 				'style-loader', 	// tird: inject styles into DOM
+	// 				'css-loader', 		// second: turns css into common js
+	// 				'sass-loader' 		// first: turns sass into css
+	// 			]
+	// 		}
+	// 	]
+	// }
 });

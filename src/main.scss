@@ -1,6 +1,19 @@
+// confis
 @import './scss/normalize';
 @import './scss/variables';
 @import './scss/helpers';
 
+$bootstrap-icons-font-src: url("../node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff?08efbba7c53d8c5413793eecb19b20bb") format("woff2"),
+url("../node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff?08efbba7c53d8c5413793eecb19b20bb") format("woff") !default;
+
+@import './scss/variables';
+
+// bootstrap variables
+$primary: $button-color;
+
+@import '~bootstrap-icons/font/bootstrap-icons.scss';
+@import '~bootstrap/scss/bootstrap';
+
+// style app
 @import './scss/custom';
 

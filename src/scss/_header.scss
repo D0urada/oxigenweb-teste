@@ -1,8 +1,22 @@
 header {
 	background: $color-primary;
-	height: 15vh;
 
-	.logo {
-		background: black;
+	li {
+		a {
+			font-style: normal !important;
+			font-weight: 600 !important;
+			font-size: 16px !important;
+			line-height: 20px !important;
+			&:hover {
+				text-decoration: underline !important;
+			}
+		}
+	}
+
+	button {
+		font-style: normal !important;
+		font-weight: 600 !important;
+		font-size: 15px !important;
+		line-height: 26px !important;
 	}
 }

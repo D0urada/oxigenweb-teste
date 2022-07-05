@@ -1,3 +1,4 @@
-export const app = () => {
-	return alert('hello')
-}
+
+$(document).ready(function() {
+
+});

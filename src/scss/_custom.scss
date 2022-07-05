@@ -1,26 +1,3 @@
-@font-face {
-	font-family: "gunterz";
-	src: url("../src/assets/fonts/gunterz-demo/Fontspring-DEMO-gunterz-regular.otf");
-	font-family: "sebino";
-	src: url("../src/assets/fonts/sebino/Sebino-Regular.ttf");
-}
-
-.gunterz-font {
-	font-family: 'gunterz', sans-serif !important;
-}
-
-.sebino-font {
-	font-family: 'sebino', sans-serif !important;
-}
-
-a, a:hover, a:focus, a:active {
-	text-decoration: none !important;
-	color: inherit !important;
-}
-ul {
-	list-style-type: none !important;
-}
-
 @import './header';
 @import './section_one';
 @import './section_two';

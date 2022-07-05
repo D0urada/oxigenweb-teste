@@ -1,7 +1,8 @@
 # natoo - Teste OxigenWeb
 
 - needs npm & node installed to run
-- d0urada.github.io/natoo
+
+- url: https://d0urada.github.io/natoo/
 
 clone the project:
     

@@ -10,7 +10,7 @@ module.exports = merge(config, {
 	mode: "production",
 	output: {
 		filename: "[name].[hash].bundle.js",
-		path: path.resolve(__dirname, "dist")
+		path: path.resolve(__dirname, "docs")
 	},
 	optimization: {
 		minimizer: [

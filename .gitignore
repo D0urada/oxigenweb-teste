@@ -1,4 +1,4 @@
-.github/workflows
-dist
-node_modules
-
+.github/*
+docs/*
+docs/index.html
+node_modules/*

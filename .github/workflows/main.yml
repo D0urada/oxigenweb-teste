@@ -1,0 +1,38 @@
+
+name: CI
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "dev" ]
+  workflow_dispatch:
+
+jobs:
+ builds:
+  runs-on: unbunto-latest
+  steps:
+    - name run
+      run: "ola"
+  
+ deploy-dev:
+  runs-on: unbunto-latest
+  environment:
+    name: dev
+    uri: 'teste.com'
+  needs: builds
+  steps:
+    - name: aaa
+      run: "teste"
+      
+ deploy-prod:
+  runs-on: unbunto-latest
+  environment:
+    name: deploy-dev
+    uri: 'teste.com'
+  needs: builds
+  steps:
+    - name: bbb
+      run: "teste 2"
+  
+

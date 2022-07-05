@@ -20,7 +20,7 @@ runs the server:
     
 	npm start
 
-if you want to generate the docs files, run:
+if you want to generate the dist files, run:
 
 	npm run build 
 

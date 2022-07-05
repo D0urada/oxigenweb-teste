@@ -7,8 +7,15 @@ module.exports = merge(config, {
 	mode: 'development',
 	output: {
 		filename: '[name].bundle.js',
-		path: path.resolve(__dirname, 'docs')
+		path: path.resolve(__dirname, 'dist')
 	},
+	devServer: {
+		static: {
+		  directory: path.join(__dirname, 'dist'),
+		},
+		compress: true,
+		port: 8080,
+	  },
 	plugins: [
 		new HtmlWebpackPlugin({
 			template: './src/template.html'

@@ -1,4 +1,52 @@
 .section-six {
 	background: $color-quaternary;
 	height: 90vh;
+
+	div {
+		div {
+			h1 {
+				color: $color-primary;
+				font-style: normal;
+				font-weight: 900;
+				font-size: 48px;
+				line-height: 48px;
+				text-transform: uppercase;
+			}
+			p {
+				color: $color-primary;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 20px;
+				line-height: 30px;
+			}
+			button {
+				font-style: normal;
+				font-weight: 600;
+				font-size: 16px;
+				line-height: 26px;
+				text-align: center;
+				text-transform: uppercase;
+			}
+			&.dog-image-two {
+				clip-path: ellipse(60% 60% at 10% 50%);
+				background: $dog-image-two;
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: 170%;
+				background-position: 110% 0%;
+			
+				@media screen and (max-width: $medium) {
+					background-repeat: no-repeat;
+					background-size: contain;
+					background-position: center;
+				}
+			
+				@media screen and (max-width: $small) {
+					background-size: contain;
+					background-position: center;
+					background-position: 85% 0%;
+				}
+			}
+		}
+	}
 }

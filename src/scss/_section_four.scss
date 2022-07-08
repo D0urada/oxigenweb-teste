@@ -1,4 +1,30 @@
 .section-four {
 	background: $color-secondary;
 	height: 80vh;
+
+	div {
+		div {
+			div {
+				h2 {
+					font-style: normal;
+					font-weight: 900;
+					font-size: 48px;
+					line-height: 48px;
+					text-transform: uppercase;
+				}
+			}
+			&.carousel {
+				background-color: burlywood;
+				div {
+					&.carousel-item {
+						background-color: aqua;
+	
+						.container {
+							background-color: brown;
+						}
+					}
+				}
+			}
+		}
+	}
 }

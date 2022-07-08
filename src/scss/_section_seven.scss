@@ -12,10 +12,22 @@
 					font-size: 18px;
 					line-height: 29px;
 				}
+				.logo {
+					background-position: inherit !important;
+				}
 				.box-social-media {
 					&:hover {
 						cursor: pointer !important;
 						background-color: $color-quaternary !important;
+					}
+				}
+				div {
+					h2 {
+						color: $color-quaternary;
+						font-style: normal;
+						font-weight: 700;
+						font-size: 32px;
+						line-height: 48px;
 					}
 				}
 			}

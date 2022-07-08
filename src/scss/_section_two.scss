@@ -1,4 +1,68 @@
 .section-two {
 	background-color: $color-secondary;
 	height: 80vh;
+
+	div {
+		h1 {
+			color: $color-quaternary;
+			font-style: normal;
+			font-weight: 900;
+			font-size: 48px;
+			line-height: 48px;
+			text-transform: uppercase;
+		}
+		p {
+			color: $color-quaternary;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 15px;
+			line-height: 26px;
+		}
+		button {
+			font-style: normal;
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 26px;
+			text-align: center;
+			text-transform: uppercase;
+		}
+		div {
+			div {
+				&.hexagon-one, &.hexagon-two, &.hexagon-three {
+					clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+					clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+					background-repeat: no-repeat;
+					background-size: 100%;
+					background-position: center;
+				
+					@media screen and (max-width: $medium) {
+						background-repeat: no-repeat;
+						background-size: contain;
+						background-position: center;
+					}
+				
+					@media screen and (max-width: $small) {
+						background-size: contain;
+						background-position: center;
+						background-position: 85% 0%;
+					}
+				}
+				&.hexagon-one {
+					bottom: 21%;
+					left: 32%;
+					background-image: $hexagon-one;
+				}
+				&.hexagon-two {
+					top: 20%;
+					right: 20%;
+					background-image: $hexagon-two;
+				}
+				&.hexagon-three {
+					top: 20%;
+					right: 15%;
+					background-image: $hexagon-three;
+				}
+			}
+		}
+	}
 }

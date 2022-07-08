@@ -1,18 +1,23 @@
 .section-one {
-	background: $section-one-background;
-	height: 85vh;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: initial;
-
-	@media screen and (max-width: $medium) {
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: right;
-	}
-	@media screen and (max-width: $small) {
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: 85% 0%;
+	div {
+		.dog-image-one {
+			background: $dog-image-one;
+			height: 85vh;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: initial;
+		
+			@media screen and (max-width: $medium) {
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: right;
+			}
+		
+			@media screen and (max-width: $small) {
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: 85% 0%;
+			}
+		}
 	}
 }

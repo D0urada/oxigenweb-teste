@@ -13,10 +13,16 @@ header {
 		}
 	}
 
-	button {
-		font-style: normal !important;
-		font-weight: 600 !important;
-		font-size: 15px !important;
-		line-height: 26px !important;
+	div {
+		div {
+			button {
+				width: 197px;
+				height: 50px;
+				font-style: normal !important;
+				font-weight: 600 !important;
+				font-size: 15px !important;
+				line-height: 26px !important;
+			}
+		}
 	}
 }

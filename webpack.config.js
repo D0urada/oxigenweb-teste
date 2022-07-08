@@ -31,6 +31,11 @@ module.exports = {
 					'css-loader', 		// second: turns css into common js
 					'sass-loader' 		// first: turns sass into css
 				]
+			},
+			{
+				test: /\.js$/,
+				enforce: "pre",
+				use: ["source-map-loader"],
 			}
 		]
 	}

@@ -10,6 +10,7 @@ url("../node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff?08efbba7c53
 
 // bootstrap variables
 $primary: $button-color;
+$dark: #000000;
 
 @import '~bootstrap-icons/font/bootstrap-icons.scss';
 @import '~bootstrap/scss/bootstrap';

@@ -4,11 +4,11 @@
 
 clone the project:
     
-    git clone https://github.com/D0urada/natoo.git
+    git clone https://github.com/D0urada/oxigenweb-teste.git
 
 open the folder:
 
-	cd natoo
+	cd oxigenweb-teste
     
 install dependencies:
 

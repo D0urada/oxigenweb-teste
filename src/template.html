@@ -9,41 +9,153 @@
 </head>
 <body>
 	<header class="w-100 height-15 d-flex flex-row justify-content-between">
-		<div class="width-15 h-100 d-flex justify-content-start align-items-center ps-5">
-			<div class="logo width-60 h-100"></div>
-		</div>
-		<div class="width-55 h-100 d-flex flex-row justify-content-between">
-			<nav class="w-75 h-100">
-				<ul class="w-100 h-100 m-0 p-0 d-flex flex-row justify-content-between align-items-center">
-					<li>
-						<a class="gunterz-font" href="#">Home</a>
-					</li>
-					<li>
-						<a class="gunterz-font" href="#">Company</a>
-					</li>
-					<li>
-						<a class="gunterz-font" href="#">Products</a>
-					</li>
-					<li>
-						<a class="gunterz-font" href="#">Store Owner</a>
-					</li>
-					<li>
-						<a class="gunterz-font" href="#">Contact Us</a>
-					</li>
-				</ul>
-			</nav>
+		<nav class="navbar navbar-expand-lg w-100 d-flex justify-content-start">
+			<div class="container-fluid w-75 h-100">
+				<a class="navbar-brand w-25 h-100 ms-5" href="#">
+					<div class="logo mw-100 h-100"></div>
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse w-75 h-100 d-flex justify-content-end" id="navbarScroll">
+					<ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+						<li class="nav-item">
+							<a class="nav-link active gunterz-font" aria-current="page" href="#">
+								Home
+							</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle gunterz-font" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Company
+							</a>
+							<ul class="dropdown-menu width-20 p-4 text-center" aria-labelledby="navbarDarkDropdownMenuLink">
+								<li class="m-1"><a class="dropdown-item" href="#">The PremierPet</a></li>
+								<li class="m-1"><a class="dropdown-item" href="#">The Factory</a></li>
+								<li class="m-1"><a class="dropdown-item" href="#">Experience Program</a></li>
+								<li class="m-1"><a class="dropdown-item" href="#">Nutrology Research</a></li>
+								<li class="m-1"><a class="dropdown-item" href="#">About Premierpet</a></li>
+								<li class="m-1"><a class="dropdown-item" href="#">Guarantee</a></li>
+								<li class="m-1"><a class="dropdown-item" href="#">About NDC</a></li>
+								<li class="m-1"><a class="dropdown-item" href="#">Contact us</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle gunterz-font" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Products
+							</a>
+							<ul class="dropdown-menu width-20 p-4 text-center" aria-labelledby="navbarDarkDropdownMenuLink">
+								<li><a class="dropdown-item" href="#">Dog Food</a></li>
+								<li><a class="dropdown-item" href="#">Cat Food</a></li>
+								<li><a class="dropdown-item" href="#">Our Ingredients</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active gunterz-font" aria-current="page" href="#">
+								Store Owner
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active gunterz-font" aria-current="page" href="#">
+								Contact Us
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 			<div class="width-25 h-100 d-flex justify-content-end align-items-center pe-5">
 				<button type="button" class="btn btn-primary sebino-font">
 					<i class="bi bi-pin-map"></i>
 					WHERE TO BUY
 				</button>
 			</div>
-		</div>
+		</nav>
 	</header>
 	<main class="w-100 h-100 d-flex flex-column">
-		<section class="section-one w-100">
-			<div class="w-100 h-100">
-				<div class="dog-image-one"></div>
+		<section class="section-one w-100 d-flex flex-row">
+			<div class="w-10 box position-absolute z-index-100 ">
+				<div class="width-10 h-100 d-flex sidebar"></div>
+			</div>
+			<div class="w-100 h-100 d-flex flex-collum align-items-center bg-black ms-auto">
+				<div class="width-100 h-100 d-flex flex-column justify-content-evenly align-items-start bg-danger">
+					<div id="first-carousel" class="carousel slide w-100 h-100 d-flex flex-column justify-content-center align-items-center" data-bs-ride="carousel">
+						<div class="carousel-indicators h-50 d-flex flex-column justify-content-evenly position-absolute">
+							<button type="button" data-bs-target="#first-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+							<button type="button" data-bs-target="#first-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+							<button type="button" data-bs-target="#first-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+							<button type="button" data-bs-target="#first-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+						</div>
+						<div class="carousel-inner w-100 h-100">
+							<div class="carousel-item active w-100 h-100">
+								<div class="w-100 h-100 d-flex justify-content-center align-items-center dog-image-one">
+									<div class="w-50 h-75">
+										<h1 class="sebino-font pre-line mb-5">
+											science for
+											the godness
+											in your pets
+										</h1>
+										<button type="button" class="w-25 height-10 btn btn-primary sebino-font">
+											<i class="bi bi-pin-map"></i>
+											Read more
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item w-100 h-100">
+								<div class="w-100 h-100 d-flex justify-content-center align-items-center dog-image-one">
+									<div class="w-50 h-75">
+										<h1 class="sebino-font pre-line mb-5">
+											science for
+											the godness
+											in your pets
+										</h1>
+										<button type="button" class="w-25 height-10 btn btn-primary sebino-font">
+											<i class="bi bi-pin-map"></i>
+											Read more
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item w-100 h-100">
+								<div class="w-100 h-100 d-flex justify-content-center align-items-center dog-image-one">
+									<div class="w-50 h-75">
+										<h1 class="sebino-font pre-line mb-5">
+											science for
+											the godness
+											in your pets
+										</h1>
+										<button type="button" class="w-25 height-10 btn btn-primary sebino-font">
+											<i class="bi bi-pin-map"></i>
+											Read more
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item w-100 h-100">
+								<div class="w-100 h-100 d-flex justify-content-center align-items-center dog-image-one">
+									<div class="w-50 h-75">
+										<h1 class="sebino-font pre-line mb-5">
+											science for
+											the godness
+											in your pets
+										</h1>
+										<button type="button" class="w-25 height-10 btn btn-primary sebino-font">
+											<i class="bi bi-pin-map"></i>
+											Read more
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#first-carousel" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#first-carousel" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>
 			</div>
 		</section>
 		<section class="section-two w-100 d-flex">
@@ -77,41 +189,461 @@
 			</div>
 		</section>
 		<section class="section-three w-100 d-flex flex-column">
-			<div class="w-100 h-25 bg-primary">
+			<div class="w-100 h-auto">
 				<h2 class="sebino-font pre-line">
-					OUR PRODUCTS
+					our products
 				</h2>
 			</div>
-			<ul class="nav nav-tabs">
-				<li class="nav-item">
-				  <a class="nav-link active" aria-current="page" data-bs-toggle="tab" href="#teste_1">Active</a>
-				</li>
-				<li class="nav-item" data-bs-toggle="tab" href="#teste_2">
-				  <a class="nav-link">Link</a>
-				</li>
-				<li class="nav-item" data-bs-toggle="tab" href="#teste_3">
-				  <a class="nav-link">Link</a>
-				</li>
-			</ul>
-			<div class="w-100 h-75 bg-secondary tab-content">
-				<div class="tab-pane active" id="teste_1">
-					<h1>teste</h1>
-				</div>
-				<div class="tab-pane" id="teste_2">
-					<h1>teste 2</h1>
-				</div>
-				<div class="tab-pane" id="teste_3">
-					<h1>teste 3</h1>
-				</div>
+			<div class="w-100 h-auto">
+				<ul class="nav nav-pills mb-3 w-100 d-flex justify-content-center" id="pills-tab" role="tablist">
+					<li class="nav-item" role="presentation">
+						<button class="nav-link active gunterz-font" id="pills-selected-category" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+							selected category
+						</button>
+					</li>
+					<li class="nav-item" role="presentation">
+						<button class="nav-link gunterz-font" id="pills-inactive-category" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+							inactive category
+						</button>
+					</li>
+				</ul>
 			</div>
+			  <div class="tab-content w-100 h-100" id="pills-tabContent">
+				<div class="tab-pane fade show active w-100 h-100" id="pills-home" role="tabpanel" aria-labelledby="pills-selected-category">
+					<div class="w-100 h-auto">
+						<div class="w-100 h-100">
+							<div id="second-carousel" class="carousel slide w-100 h-100 d-flex flex-column justify-content-center align-items-center" data-bs-ride="carousel">
+								<div class="carousel-inner w-75 h-100">
+									<div class="carousel-item active">
+										<div class="w-100 h-100 d-flex justify-content-evenly align-items-center">
+											<div class="w-25 h-100 d-flex flex-column justify-content-center">
+												<div class="w-100 bg-white">
+													<div class="mw-100 mh-100 m-5">
+														<img class="mw-100 mh-100" src="./assets/imgs/dog-food-1.png" alt="product_1">
+													</div>
+												</div>
+												<p class="w-100 height-6 gunterz-font">
+													Natoo Crunchy Biscuits Oats and Berries Flavor Small Sized Dogs 226g
+												</p>
+												<button class="w-50 btn btn-primary sebino-font" type="button">
+													EXPLORE
+												</button>
+											</div>
+											<div class="w-25 h-100 d-flex flex-column justify-content-center">
+												<div class="w-100 bg-white">
+													<div class="mw-100 mh-100 m-5">
+														<img class="mw-100 mh-100" src="./assets/imgs/dog-food-2.png" alt="product_1">
+													</div>
+												</div>
+												<p class="w-100 height-6 gunterz-font">
+													Natoo Crunchy Biscuits Oats and Berries Flavor Small Sized Dogs 226g
+												</p>
+												<button class="w-50 btn btn-primary sebino-font" type="button">
+													EXPLORE
+												</button>
+											</div>
+											<div class="w-25 h-100 d-flex flex-column justify-content-center">
+												<div class="w-100 bg-white">
+													<div class="mw-100 mh-100 m-5">
+														<img class="mw-100 mh-100" src="./assets/imgs/dog-food-3.png" alt="product_1">
+													</div>
+												</div>
+												<p class="w-100 height-6 gunterz-font">
+													Natoo Crunchy Biscuits Oats and Berries Flavor Small Sized Dogs 226g
+												</p>
+												<button class="w-50 btn btn-primary sebino-font" type="button">
+													EXPLORE
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item w-100 h-100 ">
+										<div class="w-100 h-100 d-flex justify-content-evenly align-items-center">
+											<div class="w-25 h-100 d-flex flex-column justify-content-center">
+												<div class="w-100 bg-white">
+													<div class="mw-100 mh-100 m-5">
+														<img class="mw-100 mh-100" src="./assets/imgs/dog-food-3.png" alt="product_1">
+													</div>
+												</div>
+												<p class="w-100 height-6 gunterz-font">
+													Natoo Crunchy Biscuits Oats and Berries Flavor Small Sized Dogs 226g
+												</p>
+												<button class="w-50 btn btn-primary sebino-font" type="button">
+													EXPLORE
+												</button>
+											</div>
+											<div class="w-25 h-100 d-flex flex-column justify-content-center">
+												<div class="w-100 bg-white">
+													<div class="mw-100 mh-100 m-5">
+														<img class="mw-100 mh-100" src="./assets/imgs/dog-food-2.png" alt="product_1">
+													</div>
+												</div>
+												<p class="w-100 height-6 gunterz-font">
+													Natoo Crunchy Biscuits Oats and Berries Flavor Small Sized Dogs 226g
+												</p>
+												<button class="w-50 btn btn-primary sebino-font" type="button">
+													EXPLORE
+												</button>
+											</div>
+											<div class="w-25 h-100 d-flex flex-column justify-content-center">
+												<div class="w-100 bg-white">
+													<div class="mw-100 mh-100 m-5">
+														<img class="mw-100 mh-100" src="./assets/imgs/dog-food-1.png" alt="product_1">
+													</div>
+												</div>
+												<p class="w-100 height-6 gunterz-font">
+													Natoo Crunchy Biscuits Oats and Berries Flavor Small Sized Dogs 226g
+												</p>
+												<button class="w-50 btn btn-primary sebino-font" type="button">
+													EXPLORE
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item w-100 h-100">
+										<div class="w-100 h-100 d-flex justify-content-evenly align-items-center">
+											<div class="w-25 h-100 d-flex flex-column justify-content-center">
+												<div class="w-100 bg-white">
+													<div class="mw-100 mh-100 m-5">
+														<img class="mw-100 mh-100" src="./assets/imgs/dog-food-2.png" alt="product_1">
+													</div>
+												</div>
+												<p class="w-100 height-6 gunterz-font">
+													Natoo Crunchy Biscuits Oats and Berries Flavor Small Sized Dogs 226g
+												</p>
+												<button class="w-50 btn btn-primary sebino-font" type="button">
+													EXPLORE
+												</button>
+											</div>
+											<div class="w-25 h-100 d-flex flex-column justify-content-center">
+												<div class="w-100 bg-white">
+													<div class="mw-100 mh-100 m-5">
+														<img class="mw-100 mh-100" src="./assets/imgs/dog-food-2.png" alt="product_1">
+													</div>
+												</div>
+												<p class="w-100 height-6 gunterz-font">
+													Natoo Crunchy Biscuits Oats and Berries Flavor Small Sized Dogs 226g
+												</p>
+												<button class="w-50 btn btn-primary sebino-font" type="button">
+													EXPLORE
+												</button>
+											</div>
+											<div class="w-25 h-100 d-flex flex-column justify-content-center">
+												<div class="w-100 bg-white">
+													<div class="mw-100 mh-100 m-5">
+														<img class="mw-100 mh-100" src="./assets/svg/dog-food-image.svg" alt="product_1">
+													</div>
+												</div>
+												<p class="w-100 height-6 gunterz-font">
+													Natoo Crunchy Biscuits Oats and Berries Flavor Small Sized Dogs 226g
+												</p>
+												<button class="w-50 btn btn-primary sebino-font" type="button">
+													EXPLORE
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<button class="carousel-control-prev" type="button" data-bs-target="#second-carousel" data-bs-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Previous</span>
+								</button>
+								<button class="carousel-control-next" type="button" data-bs-target="#second-carousel" data-bs-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Next</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade w-100 h-100" id="pills-profile" role="tabpanel" aria-labelledby="pills-inactive-category">
+					<div class="w-100 h-auto">
+						<div class="w-100 h-100">
+							<div id="third-carousel" class="carousel slide w-100 h-100 d-flex flex-column justify-content-center align-items-center" data-bs-ride="carousel">
+								<div class="carousel-inner w-75 h-100">
+									<div class="carousel-item active">
+										<div class="w-100 h-100 d-flex justify-content-evenly align-items-center">
+											<div class="w-25 h-100 d-flex flex-column justify-content-center">
+												<div class="w-100 bg-white">
+													<div class="mw-100 mh-100 m-5">
+														<img class="mw-100 mh-100" src="./assets/imgs/dog-food-1.png" alt="product_1">
+													</div>
+												</div>
+												<p class="w-100 height-6 gunterz-font">
+													Natoo Crunchy Biscuits Oats and Berries Flavor Small Sized Dogs 226g
+												</p>
+												<button class="w-50 btn btn-primary sebino-font" type="button">
+													EXPLORE
+												</button>
+											</div>
+											<div class="w-25 h-100 d-flex flex-column justify-content-center">
+												<div class="w-100 bg-white">
+													<div class="mw-100 mh-100 m-5">
+														<img class="mw-100 mh-100" src="./assets/imgs/dog-food-2.png" alt="product_1">
+													</div>
+												</div>
+												<p class="w-100 height-6 gunterz-font">
+													Natoo Crunchy Biscuits Oats and Berries Flavor Small Sized Dogs 226g
+												</p>
+												<button class="w-50 btn btn-primary sebino-font" type="button">
+													EXPLORE
+												</button>
+											</div>
+											<div class="w-25 h-100 d-flex flex-column justify-content-center">
+												<div class="w-100 bg-white">
+													<div class="mw-100 mh-100 m-5">
+														<img class="mw-100 mh-100" src="./assets/imgs/dog-food-3.png" alt="product_1">
+													</div>
+												</div>
+												<p class="w-100 height-6 gunterz-font">
+													Natoo Crunchy Biscuits Oats and Berries Flavor Small Sized Dogs 226g
+												</p>
+												<button class="w-50 btn btn-primary sebino-font" type="button">
+													EXPLORE
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item w-100 h-100 ">
+										<div class="w-100 h-100 d-flex justify-content-evenly align-items-center">
+											<div class="w-25 h-100 d-flex flex-column justify-content-center">
+												<div class="w-100 bg-white">
+													<div class="mw-100 mh-100 m-5">
+														<img class="mw-100 mh-100" src="./assets/imgs/dog-food-3.png" alt="product_1">
+													</div>
+												</div>
+												<p class="w-100 height-6 gunterz-font">
+													Natoo Crunchy Biscuits Oats and Berries Flavor Small Sized Dogs 226g
+												</p>
+												<button class="w-50 btn btn-primary sebino-font" type="button">
+													EXPLORE
+												</button>
+											</div>
+											<div class="w-25 h-100 d-flex flex-column justify-content-center">
+												<div class="w-100 bg-white">
+													<div class="mw-100 mh-100 m-5">
+														<img class="mw-100 mh-100" src="./assets/imgs/dog-food-2.png" alt="product_1">
+													</div>
+												</div>
+												<p class="w-100 height-6 gunterz-font">
+													Natoo Crunchy Biscuits Oats and Berries Flavor Small Sized Dogs 226g
+												</p>
+												<button class="w-50 btn btn-primary sebino-font" type="button">
+													EXPLORE
+												</button>
+											</div>
+											<div class="w-25 h-100 d-flex flex-column justify-content-center">
+												<div class="w-100 bg-white">
+													<div class="mw-100 mh-100 m-5">
+														<img class="mw-100 mh-100" src="./assets/imgs/dog-food-1.png" alt="product_1">
+													</div>
+												</div>
+												<p class="w-100 height-6 gunterz-font">
+													Natoo Crunchy Biscuits Oats and Berries Flavor Small Sized Dogs 226g
+												</p>
+												<button class="w-50 btn btn-primary sebino-font" type="button">
+													EXPLORE
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item w-100 h-100">
+										<div class="w-100 h-100 d-flex justify-content-evenly align-items-center">
+											<div class="w-25 h-100 d-flex flex-column justify-content-center">
+												<div class="w-100 bg-white">
+													<div class="mw-100 mh-100 m-5">
+														<img class="mw-100 mh-100" src="./assets/imgs/dog-food-2.png" alt="product_1">
+													</div>
+												</div>
+												<p class="w-100 height-6 gunterz-font">
+													Natoo Crunchy Biscuits Oats and Berries Flavor Small Sized Dogs 226g
+												</p>
+												<button class="w-50 btn btn-primary sebino-font" type="button">
+													EXPLORE
+												</button>
+											</div>
+											<div class="w-25 h-100 d-flex flex-column justify-content-center">
+												<div class="w-100 bg-white">
+													<div class="mw-100 mh-100 m-5">
+														<img class="mw-100 mh-100" src="./assets/imgs/dog-food-2.png" alt="product_1">
+													</div>
+												</div>
+												<p class="w-100 height-6 gunterz-font">
+													Natoo Crunchy Biscuits Oats and Berries Flavor Small Sized Dogs 226g
+												</p>
+												<button class="w-50 btn btn-primary sebino-font" type="button">
+													EXPLORE
+												</button>
+											</div>
+											<div class="w-25 h-100 d-flex flex-column justify-content-center">
+												<div class="w-100 bg-white">
+													<div class="mw-100 mh-100 m-5">
+														<img class="mw-100 mh-100" src="./assets/svg/dog-food-image.svg" alt="product_1">
+													</div>
+												</div>
+												<p class="w-100 height-6 gunterz-font">
+													Natoo Crunchy Biscuits Oats and Berries Flavor Small Sized Dogs 226g
+												</p>
+												<button class="w-50 btn btn-primary sebino-font" type="button">
+													EXPLORE
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<button class="carousel-control-prev" type="button" data-bs-target="#third-carousel" data-bs-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Previous</span>
+								</button>
+								<button class="carousel-control-next" type="button" data-bs-target="#third-carousel" data-bs-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Next</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			  </div>
 		</section>
 		<section class="section-four w-100 d-flex flex-column">
-			<div class="bg-danger w-100 h-25" id="teste" data-teste="teste"></div>
-			<div class="w-100 height-75">
-				<div class="w-100 h-25 bg-primary">
+			<div class="w-100" id="teste" data-teste="teste"></div>
+			<div class="w-100 height-100">
+				<div class="mw-100 h-25 d-flex justify-content-start align-items-end mx-5 px-5">
 					<h2 class="sebino-font pre-line">
 						COMPANY
 					</h2>
+				</div>
+				<div class="mw-100 h-75">
+					<div id="fourth-carousel" class="carousel slide w-100 h-100 d-flex flex-column justify-content-center align-items-center" data-bs-ride="carousel">
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#fourth-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+							<button type="button" data-bs-target="#fourth-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+							<button type="button" data-bs-target="#fourth-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+							<button type="button" data-bs-target="#fourth-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+						</div>
+						<div class="carousel-inner w-100 h-100">
+							<div class="carousel-item active w-100 h-100">
+								<div class="w-100 h-100 d-flex justify-content-evenly align-items-center">
+									<div class="width-20 h-75 d-flex flex-column justify-content-center bg-secondary px-3">
+										<div class="w-100 h-75"></div>
+										<button type="button" class="w-25 btn btn-primary sebino-font">
+											<i class="bi bi-plus-lg"></i>
+										</button>
+									</div>
+									<div class="width-20 h-75 d-flex flex-column justify-content-center bg-secondary px-3">
+										<div class="w-100 h-75"></div>
+										<button type="button" class="w-25 btn btn-primary sebino-font">
+											<i class="bi bi-plus-lg"></i>
+										</button>
+									</div>
+									<div class="width-20 h-75 d-flex flex-column justify-content-center bg-secondary px-3">
+										<div class="w-100 h-75"></div>
+										<button type="button" class="w-25 btn btn-primary sebino-font">
+											<i class="bi bi-plus-lg"></i>
+										</button>
+									</div>
+									<div class="width-20 h-75 d-flex flex-column justify-content-center bg-secondary px-3">
+										<div class="w-100 h-75"></div>
+										<button type="button" class="w-25 btn btn-primary sebino-font">
+											<i class="bi bi-plus-lg"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item w-100 h-100">
+								<div class="w-100 h-100 d-flex justify-content-evenly align-items-center">
+									<div class="width-20 h-75 d-flex flex-column justify-content-center bg-black px-3">
+										<div class="w-100 h-75"></div>
+										<button type="button" class="w-25 btn btn-primary sebino-font">
+											<i class="bi bi-plus-lg"></i>
+										</button>
+									</div>
+									<div class="width-20 h-75 d-flex flex-column justify-content-center bg-black px-3">
+										<div class="w-100 h-75"></div>
+										<button type="button" class="w-25 btn btn-primary sebino-font">
+											<i class="bi bi-plus-lg"></i>
+										</button>
+									</div>
+									<div class="width-20 h-75 d-flex flex-column justify-content-center bg-black px-3">
+										<div class="w-100 h-75"></div>
+										<button type="button" class="w-25 btn btn-primary sebino-font">
+											<i class="bi bi-plus-lg"></i>
+										</button>
+									</div>
+									<div class="width-20 h-75 d-flex flex-column justify-content-center bg-black px-3">
+										<div class="w-100 h-75"></div>
+										<button type="button" class="w-25 btn btn-primary sebino-font">
+											<i class="bi bi-plus-lg"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item w-100 h-100">
+								<div class="w-100 h-100 d-flex justify-content-evenly align-items-center">
+									<div class="width-20 h-75 d-flex flex-column justify-content-center bg-danger px-3">
+										<div class="w-100 h-75"></div>
+										<button type="button" class="w-25 btn btn-primary sebino-font">
+											<i class="bi bi-plus-lg"></i>
+										</button>
+									</div>
+									<div class="width-20 h-75 d-flex flex-column justify-content-center bg-danger px-3">
+										<div class="w-100 h-75"></div>
+										<button type="button" class="w-25 btn btn-primary sebino-font">
+											<i class="bi bi-plus-lg"></i>
+										</button>
+									</div>
+									<div class="width-20 h-75 d-flex flex-column justify-content-center bg-danger px-3">
+										<div class="w-100 h-75"></div>
+										<button type="button" class="w-25 btn btn-primary sebino-font">
+											<i class="bi bi-plus-lg"></i>
+										</button>
+									</div>
+									<div class="width-20 h-75 d-flex flex-column justify-content-center bg-danger px-3">
+										<div class="w-100 h-75"></div>
+										<button type="button" class="w-25 btn btn-primary sebino-font">
+											<i class="bi bi-plus-lg"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item w-100 h-100">
+								<div class="w-100 h-100 d-flex justify-content-evenly align-items-center">
+									<div class="width-20 h-75 d-flex flex-column justify-content-center bg-dark px-3">
+										<div class="w-100 h-75"></div>
+										<button type="button" class="w-25 btn btn-primary sebino-font">
+											<i class="bi bi-plus-lg"></i>
+										</button>
+									</div>
+									<div class="width-20 h-75 d-flex flex-column justify-content-center bg-dark px-3">
+										<div class="w-100 h-75"></div>
+										<button type="button" class="w-25 btn btn-primary sebino-font">
+											<i class="bi bi-plus-lg"></i>
+										</button>
+									</div>
+									<div class="width-20 h-75 d-flex flex-column justify-content-center bg-dark px-3">
+										<div class="w-100 h-75"></div>
+										<button type="button" class="w-25 btn btn-primary sebino-font">
+											<i class="bi bi-plus-lg"></i>
+										</button>
+									</div>
+									<div class="width-20 h-75 d-flex flex-column justify-content-center bg-dark px-3">
+										<div class="w-100 h-75"></div>
+										<button type="button" class="w-25 btn btn-primary sebino-font">
+											<i class="bi bi-plus-lg"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#fourth-carousel" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#fourth-carousel" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -150,11 +682,8 @@
 		</section>
 		<section class="section-six w-100 d-flex">
 			<div class="w-50 h-100">
-				<div class="w-85 h-100 dog-image-two">
-					<div class="width-10 h-100 d-flex bg-danger">
-						<div class="w-50 h-100 bg-dark"></div>
-						<div class="w-50 h-100 bg-secondary"></div>
-					</div>
+				<div class="w-85 h-100 dog-image-three">
+					<div class="width-10 h-100 d-flex sidebar"></div>
 				</div>
 			</div>
 			<div class="w-50 h-100 d-flex flex-collum align-items-center">

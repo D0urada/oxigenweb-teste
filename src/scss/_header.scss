@@ -1,28 +1,47 @@
 header {
 	background: $color-primary;
 
-	li {
-		a {
-			font-style: normal !important;
-			font-weight: 600 !important;
-			font-size: 16px !important;
-			line-height: 20px !important;
-			&:hover {
-				text-decoration: underline !important;
+	nav div div ul {
+		li {
+			a {
+				font-style: normal !important;
+				font-weight: 600 !important;
+				font-size: 16px !important;
+				line-height: 20px !important;
+				&:hover {
+					text-decoration: underline !important;
+				}
+			}
+
+			ul {
+				background-color: #f2ddc6d7 !important;
+				left: -100% !important;
+				-webkit-box-shadow: 3px 7px 32px 1px rgba(0,0,0,0.7) !important; 
+				box-shadow: 3px 7px 32px 1px rgba(0,0,0,0.7) !important;
+				li {
+					a {
+						font-style: normal !important;
+						font-weight: 600 !important;
+						font-size: 16px !important;
+						line-height: 20px !important;
+						&:hover {
+							text-decoration: underline !important;
+							background-color: transparent !important;
+						}
+					}
+				}
 			}
 		}
 	}
-
+	
 	div {
-		div {
-			button {
-				width: 197px;
-				height: 50px;
-				font-style: normal !important;
-				font-weight: 600 !important;
-				font-size: 15px !important;
-				line-height: 26px !important;
-			}
+		button {
+			width: 197px;
+			height: 50px;
+			font-style: normal !important;
+			font-weight: 600 !important;
+			font-size: 15px !important;
+			line-height: 26px !important;
 		}
 	}
 }

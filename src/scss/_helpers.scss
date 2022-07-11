@@ -35,6 +35,26 @@ ul {
 	font-family: 'sebino', sans-serif !important;
 }
 
+span.carousel-control-prev-icon, span.carousel-control-next-icon {
+	background-color: black;
+	border-style: solid;
+	border-width: 5px;
+	border-radius: 50%;
+	border-color: black;
+}
+
+span.carousel-control-prev-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+span.carousel-control-next-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-indicators button {
+	background-color: black !important;
+}
+
 .logo {
 	background: $logo;
 	background-repeat: no-repeat;
@@ -45,6 +65,12 @@ ul {
 .pre-line {
 	white-space: pre-line;
 }
+
+.z-index-0 {z-index: 0 !important;}
+.z-index-10 {z-index: 10 !important;}
+.z-index-100 {z-index: 100 !important;}
+
+
 
 .height-2 {height: 2vh !important;}
 .height-4 {height: 4vh !important;}
@@ -87,6 +113,7 @@ ul {
 .width-75 {width: 75vw !important;}
 .width-80 {width: 80vw !important;}
 .width-85 {width: 85vw !important;}
+.width-88 {width: 88vw !important;}
 .width-90 {width: 90vw !important;}
 .width-95 {width: 95vw !important;}
 .width-100 {width: 100vw !important;}

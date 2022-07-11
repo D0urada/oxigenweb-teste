@@ -1,4 +1,9 @@
 
 $(document).ready(function() {
-	console.log($( "#teste" ).data( "teste"));
+
+	document.querySelector('.second-button').addEventListener('click', function () {
+
+		document.querySelector('.animated-icon2').classList.toggle('open');
+	});
+		
 });

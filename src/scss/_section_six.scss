@@ -27,13 +27,11 @@
 				text-align: center;
 				text-transform: uppercase;
 			}
-			&.dog-image-two {
-				clip-path: ellipse(60% 60% at 10% 50%);
-				background: $dog-image-two;
+			&.dog-image-three {
+				background: $dog-image-three;
 				background-repeat: no-repeat;
-				background-position: center;
-				background-size: 170%;
-				background-position: 110% 0%;
+				background-size: contain;
+				background-position: 10% 0%;
 			
 				@media screen and (max-width: $medium) {
 					background-repeat: no-repeat;
@@ -45,6 +43,12 @@
 					background-size: contain;
 					background-position: center;
 					background-position: 85% 0%;
+				}
+
+				.sidebar {
+					background: $sidebar;
+					background-repeat: no-repeat;
+					background-size: 100%;
 				}
 			}
 		}
